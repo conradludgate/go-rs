@@ -1,4 +1,4 @@
-packag main
+package main
 
 import "fmt"
 
@@ -14,7 +14,7 @@ func (f *Fib) Next() int {
 }
 
 func main() {
-	fib := Fib{0, 1}
+	fib := Fib{0x0, 1}
 	for i := 0; i < 10; i++ {
 		fmt.Println(fib.Next())
 	}
