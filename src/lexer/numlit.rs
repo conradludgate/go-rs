@@ -7,7 +7,7 @@ use nom::{
 };
 use nom_supreme::tag::complete::tag;
 
-use crate::{
+use super::{
     extra::{matches, ws},
     Parse, Span,
 };

@@ -1,7 +1,7 @@
 use nom::{IResult, character::complete::one_of, error::context, multi::many0, sequence::tuple};
 use nom_supreme::tag::complete::tag;
 
-use crate::{
+use super::{
     extra::{matches, ws, Ident, Punct},
     numlit::NumLit,
     strlit::StrLit,

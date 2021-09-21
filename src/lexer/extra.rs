@@ -1,8 +1,9 @@
 use nom::{IResult, Parser, branch::alt, character::complete::{alpha1, alphanumeric1, multispace0, one_of}, combinator::recognize, error::ParseError, multi::many0, sequence::{pair, preceded, terminated}};
-use nom_locate::position;
+use nom_locate::{position};
 use nom_supreme::{error::ErrorTree, tag::complete::tag};
 
-use crate::{Parse, Span};
+use super::{Parse, Span};
+
 
 pub fn ws<'a, F: 'a, O, E: ParseError<Span<'a>>>(
     inner: F,
